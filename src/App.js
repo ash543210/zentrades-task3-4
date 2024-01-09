@@ -2,9 +2,9 @@ import "./App.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import logo from "./assets/smartservlogo.png";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { updateUser } from "./store/userSlice";
 
 function App() {
@@ -15,10 +15,13 @@ function App() {
   const usernameValue = useRef();
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const state = useSelector((state) => state.user);
+  useEffect(() => {
+    if (state.username) navigate("/dashboard");
+  }, [state]);
 
   const usernameValidtion = () => {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    console.log(emailRegex.test(usernameValue.current.value));
     if (!emailRegex.test(usernameValue.current.value)) {
       setErrorInUsername("Invalid username, must be a valid email");
       return false;
