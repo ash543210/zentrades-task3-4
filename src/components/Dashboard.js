@@ -8,7 +8,7 @@ const Dashboard = () => {
   const state = useSelector((state) => state.user);
   const navigate = useNavigate();
   useEffect(() => {
-    if (!state.username) navigate("/");
+    if (!state.username) navigate("/zentrades-task3-4");
     console.log(state);
   }, [state]);
   return (

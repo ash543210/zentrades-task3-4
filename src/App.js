@@ -79,7 +79,7 @@ function App() {
                   password: passwordValue.current.value,
                 })
               );
-              navigate("/dashboard");
+              navigate("/zentrades-task3-4/dashboard");
             }
           }}
           className="py-2 d-flex flex-column w-75 align-self-center">
