@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "/",
+        path: "/zentrades-task3-4",
         element: <App />,
       },
     ],
