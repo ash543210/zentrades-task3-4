@@ -13,16 +13,11 @@ import Dashboard from "./components/Dashboard";
 const router = createBrowserRouter([
   {
     path: "/zentrades-task3-4",
-    children: [
-      {
-        path: "dashboard",
-        element: <Dashboard />,
-      },
-      {
-        path: "/zentrades-task3-4",
-        element: <App />,
-      },
-    ],
+    element: <App />,
+  },
+  {
+    path: "/zentrades-task3-4/dashboard",
+    element: <Dashboard />,
   },
 ]);
 
