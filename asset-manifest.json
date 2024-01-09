@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/zentrades-task3-4/static/css/main.f855e6bc.css",
-    "main.js": "/zentrades-task3-4/static/js/main.82332b8c.js",
+    "main.js": "/zentrades-task3-4/static/js/main.e75000b1.js",
     "static/js/787.275d8d7e.chunk.js": "/zentrades-task3-4/static/js/787.275d8d7e.chunk.js",
     "static/media/smartservlogo.png": "/zentrades-task3-4/static/media/smartservlogo.7bb0f88a38e625981e6d.png",
     "index.html": "/zentrades-task3-4/index.html",
     "main.f855e6bc.css.map": "/zentrades-task3-4/static/css/main.f855e6bc.css.map",
-    "main.82332b8c.js.map": "/zentrades-task3-4/static/js/main.82332b8c.js.map",
+    "main.e75000b1.js.map": "/zentrades-task3-4/static/js/main.e75000b1.js.map",
     "787.275d8d7e.chunk.js.map": "/zentrades-task3-4/static/js/787.275d8d7e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.82332b8c.js"
+    "static/js/main.e75000b1.js"
   ]
 }
