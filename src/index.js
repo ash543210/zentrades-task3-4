@@ -12,7 +12,7 @@ import Dashboard from "./components/Dashboard";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/zentrades-task3-4",
     children: [
       {
         path: "dashboard",
