@@ -6,11 +6,6 @@ import Chart from "react-apexcharts";
 
 const Dashboard = () => {
   const state = useSelector((state) => state.user);
-  const navigate = useNavigate();
-  useEffect(() => {
-    if (!state.username) navigate("/");
-    console.log(state);
-  }, [state]);
   return (
     <div
       style={{ backgroundColor: "#F3F0EB" }}
