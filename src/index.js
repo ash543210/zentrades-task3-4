@@ -9,17 +9,23 @@ import store from "./store";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
+    },
+    {
+      path: "/",
+      element: <App />,
+    },
+  ],
   {
-    path: "/zentrades-task3-4",
-    element: <App />,
-  },
-  {
-    path: "/zentrades-task3-4/dashboard",
-    element: <Dashboard />,
-  },
-]);
+    basename: "/zentrades-task3-4",
+  }
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
